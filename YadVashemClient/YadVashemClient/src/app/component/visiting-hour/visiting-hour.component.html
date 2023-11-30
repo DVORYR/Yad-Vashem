@@ -1,0 +1,25 @@
+<body dir="rtl">
+
+    <div class="dateAndAvailablePlaces">
+        <div class="date">תאריך</div>
+       
+        <div class="date"> {{ today | date:'dd/MM/yyyy' }}
+</div>
+        <div class="availablePlaces">כרטיסים שנותרו</div>
+        <div class="date">תאריך</div>
+    </div>
+<mat-tab-group>
+    <mat-tab  class="tab" label="בוקר" >
+        <app-show-hours *ngIf="flag" [listVisitHouers]="morningList"></app-show-hours>
+    </mat-tab>
+    <mat-tab class="tab" label="צהריים">
+        <app-show-hours *ngIf="flag" [listVisitHouers]="afternoonList"></app-show-hours>
+    </mat-tab>
+    <mat-tab class="tab" label='אחה"צ'>
+        <app-show-hours *ngIf="flag" [listVisitHouers]="remainingList"></app-show-hours>
+    </mat-tab>
+   
+   
+</mat-tab-group>
+
+<button mat-raised-button color="primary" (click)="continueOrder()">המשך</button></body>

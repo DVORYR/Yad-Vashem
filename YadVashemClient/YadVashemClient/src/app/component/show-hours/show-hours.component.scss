@@ -1,0 +1,49 @@
+.hourButton[_ngcontent-ng-c3541621598]:target{    width: 50px;
+    background-color: rgb(82, 126, 193);
+}
+.stressed {
+    background-color: red;
+    border-radius: 50%;
+    
+}
+.submit {
+    // width: 80px;
+    // height: 38px;
+    // background: linear-gradient(to right, #3439db, #78b6df, #2b29b9, #3498db);
+    // background: rgba(255, 255, 255, 0); // אפשר לשנות את הערך של rgba על פי הצורך
+    // box-shadow: 0px 1px 1px #161D2540;
+    // border-radius: 31px;
+    // font: var(--unnamed-font-style-normal) normal var(--unnamed-font-weight-normal) var(--unnamed-font-size-18)/var(--unnamed-line-spacing-46) var(--unnamed-font-family-assistant);
+    // text-align: center;
+    // font: normal normal normal 18px/46px Assistant;
+    // letter-spacing: 0.27px;
+    // color: #FFFFFF;
+    // opacity: 1;
+
+
+    background: transparent;
+    border: none;
+    outline: none;
+    cursor: pointer;
+    padding: 0;
+}
+
+// .submit:hover {
+//     background: transparent linear-gradient(180deg, #1E63A1 0%, #0C2E4B 100%, ) 0% 0% no-repeat padding-box;
+
+// }
+
+.submit[_ngcontent-ng-c1924425409]:focus {
+    width: 144px;
+    height: 80px;
+    border-radius: 76px;
+    color: white;
+    background: transparent linear-gradient(180deg, #2272BB 0%, #1E63A1 100%) 0% 0% no-repeat padding-box;
+}
+
+// .submit:disabled {
+
+//     cursor: not-allowed;
+//     border-color: #2271bb7e;
+//     background: transparent linear-gradient(180deg, #2271bb6a 0%, #2271bb6a 100%) 0% 0% no-repeat padding-box;
+// }

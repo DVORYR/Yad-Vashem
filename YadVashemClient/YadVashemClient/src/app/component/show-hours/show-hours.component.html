@@ -1,0 +1,9 @@
+<mat-grid-list cols="3" rowHeight="3:1">
+  <mat-grid-tile *ngFor="let l of listVisitHouers">
+    <button  class="submit" [disabled]="l.isClosed || l.availablePlaces == 0 || visitorCount > l.availablePlaces" (click)="onButtonClick(l.startTime)">
+      {{l.startTime}} 
+      <br>
+      {{l.isClosed ? "סגור" : l.availablePlaces == 0 ? "אזלו" : l.availablePlaces + " כרטיסים" }}
+    </button>
+  </mat-grid-tile>
+</mat-grid-list>

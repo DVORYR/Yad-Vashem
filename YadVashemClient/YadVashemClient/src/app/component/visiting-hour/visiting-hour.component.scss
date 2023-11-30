@@ -1,0 +1,18 @@
+.tab[_ngcontent-ng-c1924425409]:focus {
+  
+   border-bottom: 10px;
+   
+    color: white;
+    background: transparent linear-gradient(180deg, #2272BB 0%, #1E63A1 100%) 0% 0% no-repeat padding-box;
+}
+:host ::ng-deep .mat-mdc-tab{
+    background-color: red;
+}
+:host ::ng-deep .mdc-tab--stacked
+{
+    background-color: red;
+}
+:host ::ng-deep .mat-mdc-tab-group.mat-mdc-tab-group-stretch-tabs>.mat-mdc-tab-header .mat-mdc-tab :focus{
+    flex-grow: 1;
+    background-color: red;
+}

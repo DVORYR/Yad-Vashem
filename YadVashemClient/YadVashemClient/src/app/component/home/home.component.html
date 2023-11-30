@@ -1,0 +1,26 @@
+<div class="haeder">
+    <mat-icon aria-hidden="false" aria-label="Example home icon" fontIcon="home"></mat-icon>
+    <div class="Entrance">כניסה למוזיאון</div>
+    <div class="ditails">נא למלא את הפרטים הדרושים ולחץ המשך</div>
+    <div class="noPayment">הכניסה למוזיאון אינה כרוכה בתשלום (כניסה בלבד ללא הדרכה)</div>
+    <div class="tour">פרטי סיור</div>
+    <form>
+        <div class="numVositors">
+
+            <div class="visitors"> מספר מבקרים</div>
+            <div class="number-input-container">
+                <!-- <button class="minus"  (click)="decrement()">
+      <mat-icon>remove</mat-icon>
+    </button> -->
+                <input class="inputNumber" type="number" name="Visitors" [(ngModel)]="valueInput"
+                    (keydown.enter)="saveVisitorsCount()" (ngModelChange)="onEditFieldTouched()"
+                    />
+                <!-- <button class="plus" mat-icon-button (click)="increment()">
+      <mat-icon>add</mat-icon>
+    </button> -->
+            </div>
+        </div>
+    </form>
+    <app-visiting-hour *ngIf="shouldRenderVisitingHour"></app-visiting-hour>
+    <!-- <router-outlet></router-outlet> -->
+</div>
